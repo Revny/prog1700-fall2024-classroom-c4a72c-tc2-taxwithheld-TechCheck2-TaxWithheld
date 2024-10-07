@@ -12,8 +12,20 @@
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
-
-
+    weeklysalary=float(input("what is your weekly salary?"))
+    
+    
+    provincialtax=6
+    federaltax=25
+    dependents=float(input("how many dependents?"))
+    provincialtaxwithheld=weeklysalary*provincialtax/100
+    federaltaxwithheld=weeklysalary*federaltax/100
+    dependentdeduction=dependents*20
+    print(provincialtaxwithheld)
+    print(federaltaxwithheld)
+    print(dependentdeduction)
+    total=provincialtaxwithheld+federaltaxwithheld-dependentdeduction
+    print(total)
 
 
 
